@@ -6,13 +6,13 @@
   object-fit: cover;
   scroll-behavior: smooth;
 }
+.main {
+  overflow: hidden;
+}
 ::-webkit-scrollbar {
   width: 5px;
   color: #007067;
   transition: all 0.4s ease;
-}
-.main {
-  overflow: hidden;
 }
 ::-webkit-scrollbar-thumb {
   background: #007067;
@@ -81,10 +81,8 @@
 .menu {
   list-style: none;
   display: flex;
-
   margin-left: 20%;
   padding: 0;
-
   gap: 40px;
   transition: 0.6s;
 }
@@ -263,7 +261,7 @@
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
 }
-.footer-logo a {
+.footer-logo i {
   color: rgb(255, 255, 255);
   font-size: 1.6rem;
   padding-right: 10px;
@@ -364,6 +362,7 @@ button {
 .login-form {
   display: flex;
   width: 100%;
+  height: 100vh;
 }
 .icon {
   margin: 10% 0 0 15%;
@@ -455,87 +454,9 @@ button {
 .side_nav_logo img {
   width: 60px;
 }
-
 .side.active {
   transform: translateX(0);
 }
-
-/* Media Query */
-/* @media (max-width: 1255px) {
-  .div1 .right {
-    margin-left: 10%;
-  }
-  .left img {
-    margin-left: -25%;
-  }
-  .left1 img {
-    margin-left: 30%;
-  }
-  .div3 .right1 {
-    margin-right: 5%;
-  }
-}
-@media (max-width: 1102px) {
-  .menu li {
-    margin-right: 0;
-  }
-  .main-body .div4 {
-    padding-top: 4rem;
-    margin-bottom: 3rem;
-  }
-  .main-body .div1 {
-    padding: 3rem 0;
-    margin-bottom: 6rem;
-  }
-}
-@media (max-width: 999px) {
-  .menu li {
-    padding: 10px 0 0;
-  }
-}
-@media (max-width: 968px) {
-  .mobile-menu span {
-    display: block;
-  }
- 
-  .logo img {
-    width: 130px;
-    height: 85px;
-  }
-  .left1 img {
-    margin-left: 10%;
-  }
-}
-@media (max-width: 823px) {
-  .navbar {
-    display: none;
-  }
-  .fa-solid {
-    margin-top: 40px;
-    font-size: 3rem;
-  }
-  .div1 .right {
-    margin-left: 5%;
-  }
-  .left img {
-    margin-left: -10%;
-  }
-  .left1 img {
-    margin-left: 10%;
-  }
-  .right1 {
-    margin-right: 20px;
-  }
-  .people {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .people-desc {
-    width: 100%;
-  }
-} */
-/* for-mobile */
-
 @media (max-width: 480px) {
   .navbar {
     display: none;
@@ -589,7 +510,6 @@ button {
     justify-content: center;
     margin-top: 15%;
   }
-
   .main-body .div1 {
     flex-wrap: wrap;
     justify-content: center;
@@ -664,7 +584,7 @@ button {
     margin-top: -12%;
   }
   .contact .message {
-    width: 105%;
+    width: 115%;
     margin-left: 3%;
     margin-top: -10%;
   }
@@ -705,5 +625,21 @@ button {
   }
   .works-dividion p {
     font-size: 12px;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    color: #007067;
+    transition: all 0.4s ease;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #007067;
+    border-radius: 4px;
+    width: 5px;
+    transition: all 0.4s ease;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 4px;
+    width: 5px;
   }
 }
