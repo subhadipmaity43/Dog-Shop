@@ -60,6 +60,9 @@
     </section>
     <div class="main">
       <div class="hambarger" id="menu"><i class="fa-solid fa-bars"></i></div>
+      <div class="ico" id="ico">
+        <a href="/"><img src="/Images/g104.png" /></a>
+      </div>
       <div class="navbar" id="navbar">
         <div class="logo">
           <a href="/">
@@ -88,7 +91,9 @@
             <p>
               At Paw Brigade, we value your pets and your relationship with
               them. The safety and <br />well being of your pets and home are
-              our top priority.
+              our top priority.Going out of town can be stressful when you have
+              a furry friend at home. But with Paw Brigade, you can enjoy your
+              travels with peace of mind knowing your dog is in good hands.
             </p>
           </div>
         </div>
@@ -157,7 +162,7 @@
     </script>
     <script>
       window.addEventListener("scroll", function () {
-        let navbar = document.querySelector("navbar");
+        let navbar = document.querySelector("#navbar");
         navbar.classList.toggle("active", window.scrollY > 0);
       });
       var menu = document.getElementById("menu");

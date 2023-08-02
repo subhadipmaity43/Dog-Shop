@@ -59,8 +59,12 @@
       </div>
     </section>
     <div class="main">
-      <div class="hambarger" id="menu"><i class="fa-solid fa-bars"></i></div>
-      <div class="ico" id="ico"><img src="/Images/g104.png" /></div>
+      <div class="mobile">
+        <div class="hambarger" id="menu"><i class="fa-solid fa-bars"></i></div>
+        <div class="ico" id="ico">
+          <a href="/"><img src="/Images/g104.png" /></a>
+        </div>
+      </div>
       <div class="navbar" id="navbar">
         <div class="logo">
           <a href="/">
@@ -204,11 +208,6 @@
       var side = document.getElementById("side");
       var close = document.getElementById("close");
       var bg_menu = document.getElementById("close");
-      console.log(side);
-      console.log(menu);
-      console.log(close);
-      console.log(bg_menu);
-
       menu.addEventListener("click", function () {
         side.classList.add("active");
       });

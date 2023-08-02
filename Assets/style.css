@@ -29,8 +29,8 @@
 .hambarger,
 .close {
   position: absolute;
-  top: 1%;
-  left: 90%;
+  top: 3%;
+  left: 88%;
   color: #007067;
 }
 .hambarger i,
@@ -217,10 +217,11 @@
   padding-right: 10px;
 }
 .left1 img {
-  border-radius: 44% 56% 24% 76% / 28% 36% 64% 72%;
+  border-radius: 43% 57% 70% 30% / 30% 30% 70% 70%;
   height: 400px;
   width: 400px;
   margin-left: 60%;
+  margin-top: 10%;
 }
 .meet {
   background-color: #f6f6f7;
@@ -258,6 +259,7 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  margin-top: 10%;
 }
 .footer .heading {
   font-size: 1.2rem;
@@ -276,6 +278,7 @@
   justify-content: space-between;
   gap: 10px;
   padding: 2% 0;
+  margin-top: 10%;
 }
 .people {
   background-color: #fff;
@@ -410,7 +413,11 @@ button {
   height: 500px;
   width: 500px;
   margin-left: -60%;
-  margin-top: 10%;
+  margin-top: 30%;
+}
+.heading img {
+  width: auto;
+  height: 15px;
 }
 .create-account a {
   text-decoration: none;
@@ -567,7 +574,7 @@ button {
     margin-left: -25%;
   }
   .right1 button {
-    margin-left: 40px;
+    margin-left: 30px;
     width: 100%;
   }
   .meet button {
@@ -581,7 +588,9 @@ button {
   .div4 {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 15%;
   }
+
   .main-body .div1 {
     flex-wrap: wrap;
     justify-content: center;
@@ -600,7 +609,7 @@ button {
     list-style: none;
   }
   .left1 img {
-    margin-left: -10px;
+    margin-left: 45px;
     margin-top: 80px;
     height: 300px;
     width: 300px;
@@ -687,5 +696,15 @@ button {
   }
   .icon .button1 {
     width: 305px;
+  }
+  .works {
+    display: flex;
+    flex-direction: column;
+  }
+  .works-dividion h4 {
+    font-size: 1rem;
+  }
+  .works-dividion p {
+    font-size: 12px;
   }
 }

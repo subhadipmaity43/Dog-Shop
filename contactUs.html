@@ -54,6 +54,7 @@
   </section>
   <div class="main">
     <div class="hambarger"><i id="menu" class="fa-solid fa-bars"></i></div>
+    <div class="ico" id="ico"><a href="/"><img src="/Images/g104.png" /></a></div>
     <div class="navbar" id="navbar">
       <div class="logo">
         <a href="/">
@@ -138,7 +139,7 @@
   </script>
   <script>
     window.addEventListener("scroll", function () {
-      let navbar = document.querySelector("navbar");
+      let navbar = document.querySelector("#navbar");
       navbar.classList.toggle("active", window.scrollY > 0);
     });
     var menu = document.getElementById("menu");
