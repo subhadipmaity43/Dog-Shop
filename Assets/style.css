@@ -403,7 +403,7 @@ button {
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
-  width: 53%;
+  width: 50%;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -614,7 +614,7 @@ button {
     margin-right: -30%;
   }
   .icon .button1 {
-    width: 305px;
+    width: 280px;
   }
   .works {
     display: flex;
