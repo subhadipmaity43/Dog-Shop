@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAW BRIGADE</title>
+    <!-- favicon -->
+    <link rel="icon" href="/Images/g104.png" />
+    <!-- customize css -->
+    <link rel="stylesheet" href="/Assets/style.css" />
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <section>
+      <div class="side" id="side">
+        <div class="side_nav_logo">
+          <div><a href="/">
+            <img src="Images\g104.png" alt="Logo" />
+          </a></div>
+          <div class="close" id="close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <ul>
+          <a href="ourService.html"><li>Our Service</li></a>
+          <a href="ourPeople.html"><li>Our People</li></a>
+          <a href="aboutUs.html"><li>About Us</li></a>
+          <a href="contactUs.html"><li>Contact</li></a>
+          <a href="login.html" class="nav-login"
+          ><li
+            style="
+              background-color: #007067;
+              padding: 15px;
+              margin: 35px;
+              list-style: none;
+              border-radius: 10px;
+              color: #fff;
+            "
+          >
+            Login
+          </li></a
+        >
+        </ul>
+      </div>
+    </section>
+    <div class="main">
+        <div class="hambarger" id="menu"><i class="fa-solid fa-bars"></i></div>
+
+        <div class="navbar" id="navbar">
+            <div class="logo">
+              <a href="/">
+                <img src="Images\g104.png" alt="Logo" />
+              </a>
+            </div>
+            <ul class="menu">
+              <li><a href="ourService.html">Our Services</a></li>
+              <li><a href="ourPeople.html">Our People</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+              <li><a href="login.html" id="login">Login</a></li>
+            </ul>
+            <ul class="mobile-menu">
+                <span><i class="fa-solid fa-bars"></i></span>
+              </ul>
+            </div>
+      <div class="login-form">
+        <div class="icon"data-aos="fade-right" data-aos-duration="1500">
+          <img src="/Images/g104.png" alt="Logo" />
+          <div class="heading">
+            <h1>Welcome back to the Paw Brigade!</h1>
+          </div>
+          <form>
+            <div class="name">
+                <label for="Username" class="name">User Name</label></br>
+                <input type="text" id="Username" name="Username"placeholder="Jhon">
+            </div>
+            <div class="password">
+                <label for="password" class="password">Password</label></br>
+                <input type="password" id="password" name="password"placeholder="**********">
+            </div>
+            <div class="create-account">
+                <a href="#">Create a new account</a>
+            </div></br>
+            <button type="submit" class="button1">LOG IN</button>
+          </form>
+        </div>
+        <div class="rimage"data-aos="fade-left" data-aos-duration="1500">
+            <img src="/Images/Vector.png" alt="Dogs"/>
+        </div>
+        
+      </div>
+      <div class="footer">
+        <div class="heading">
+          <img src="/Images/copyright.png"> 
+          2023 Paw Brigade</div>
+        <div class="footer-logo">
+          <a href="/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="/">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        window.addEventListener("scroll", function () {
+          let navbar = document.querySelector("navbar");
+          navbar.classList.toggle("active", window.scrollY > 0);
+        });
+        var menu = document.getElementById("menu");
+      var side = document.getElementById("side");
+      var close = document.getElementById("close");
+      var bg_menu = document.getElementById("close");
+      console.log(side);
+      console.log(menu);
+      console.log(close);
+      console.log(bg_menu);
+
+      menu.addEventListener("click", function () {
+        side.classList.add("active");
+      });
+      close.addEventListener("click", function () {
+        side.classList.remove("active");
+      });
+      </script>
+  </body>
+</html>
